@@ -7,7 +7,7 @@ function App() {
       <Navigation />
     <div className="App">
       <Switch>
-      <Route exact path="/" component={App} />  
+      <Route exact path="/" component={} />  
       <Route exact path="/students" component={Programs} />
       <Route exact path="/students/new" component={StudentForm} />
       <Route path="/students/:id" component={Program}/> 
