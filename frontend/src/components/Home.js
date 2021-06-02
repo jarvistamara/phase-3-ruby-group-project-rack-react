@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Form = () => {
+const Home = () => {
     return (
         <div>
-            <h1>Form</h1>
+            
         </div>
     )
 }
-export default Form
+export default Home
