@@ -1,10 +1,10 @@
 import React from 'react'
 
-const StudentForm = () => {
+const Form = () => {
     return (
         <div>
-            <h1>Student Form</h1>
+            <h1>Form</h1>
         </div>
     )
 }
-export default StudentForm
+export default Form

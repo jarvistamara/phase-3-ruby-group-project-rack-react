@@ -4,7 +4,9 @@ import Navigation from './components/Navigation'
 import Home from './components/Home'
 import Classrooms from './containers/Classrooms';
 import Classroom from './containers/Classroom';
-import StudentForm from './containers/Form';
+import Form from './containers/Form';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
       <Switch>
       <Route exact path="/" component={Home} />  
       <Route exact path="/classrooms" component={Classrooms} />
-      <Route exact path="/classrooms/new" component={StudentForm} />
+      <Route exact path="/classrooms/new" component={Form} />
       <Route path="/classroom/:id" component={Classroom}/> 
       </Switch>
     </div>
