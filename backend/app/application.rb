@@ -30,6 +30,14 @@ class Application
       teacher = Teacher.find_by(last_name: data ["teacher"])
       student = Student.create()
 
+
+
+
+
+
+
+
+      
       res_student =  {id: student.id, first_name: first_name.student, last_name: last_name.student, age: age.student, teacher: teachers.last_name, classroom: classroom.name}
 
       return [200, { 'Content-Type' => 'application/json' }, [ {:students => students}.to_json ]]
