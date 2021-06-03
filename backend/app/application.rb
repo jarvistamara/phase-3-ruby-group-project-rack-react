@@ -7,10 +7,9 @@ class Application
     if req.path.match(/test/) 
       return [200, { 'Content-Type' => 'application/json' }, [ {:message => "test response!"}.to_json ]]
 
-    elsif req.path,match(/classrooms/)
+    elsif req.path.match(/classrooms/)
       classrooms = Classroom.all
       return [200, { 'Content-Type' => 'application/json' }, [ classrooms.to_json ]]
-
     else
       resp.write "Path Not Found"
 
