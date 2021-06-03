@@ -11,7 +11,7 @@ class Application
         return [200, { 'Content-Type' => 'application/json' }, [ Classroom.all.to_json ]]
       else 
         classroom_id = req.path.split("/classroom/").last 
-        return [200, { 'Content-Type' => 'application/json' }, [ Classroom.find_by(id: classroom_id).to_json ]]
+        return [200, { 'Content-Type' => 'application/json' }, [ Classroom.find_by(id: classroom_id).to_json({:include => :students}) ]]
       end
     else
       resp.write "Path Not Found"
