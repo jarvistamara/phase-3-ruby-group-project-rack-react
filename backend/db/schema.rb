@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2021_06_02_210408) do
   create_table "classrooms", force: :cascade do |t|
     t.string "title"
     t.string "teacher_name"
+    t.string "image"
   end
 
   create_table "students", force: :cascade do |t|
