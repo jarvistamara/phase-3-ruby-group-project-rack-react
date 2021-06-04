@@ -10,17 +10,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
-      <Navigation />
-    <div className="App">
-      <Switch>
-      <Route exact path="/" component={Home} />  
-      <Route exact path="/classrooms" component={Classrooms} />
-      <Route exact path="/classrooms/new" component={Form} />
-      <Route path="/classroom/:id" component={Classroom}/> 
-      </Switch>
-    </div>
-  </Router>
+    <div className="main-container">
+      <Router>
+        <Navigation />
+      <div className="App">
+        <Switch>
+        <Route exact path="/" component={Home} />  
+        <Route exact path="/classrooms" component={Classrooms} />
+        <Route exact path="/classrooms/new" component={Form} />
+        <Route path="/classroom/:id" component={Classroom}/> 
+        </Switch>
+      </div>
+    </Router>
+  </div>
   );
 }
 

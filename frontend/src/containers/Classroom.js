@@ -1,17 +1,14 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import React, {useEffect, useState} from 'react'
+// import image2 from '../images/image2.jpg'
+
 
 const Classroom = () => {
+ 
+
+
     return (
         <div>
             <h1>Classroom</h1>
-            <Container fluid="md">
-                <Row>
-                    <Col>1 of 1</Col>
-                </Row>
-            </Container>
         </div>
     )
 }

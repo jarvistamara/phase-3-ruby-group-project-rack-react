@@ -1,4 +1,5 @@
 import React from 'react'
+import image3 from '../images/image3.jpg'
 
 const Home = () => {
     return (
@@ -9,8 +10,7 @@ const Home = () => {
             <br/>
             <hr/>
             <br/>
-            <p>Each Classroom is ONLY alloted 10 students.</p>
-            <p>Each Teacher is ONLY alloted 5 students.</p>
+            <img src={image3} alt="PK3 class"/>
         </div>
     )
 }
