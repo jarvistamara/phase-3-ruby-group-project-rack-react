@@ -4,7 +4,7 @@ import Navigation from './components/Navigation'
 import Home from './components/Home'
 import Classrooms from './containers/Classrooms';
 import Classroom from './containers/Classroom';
-import Form from './containers/Form';
+import Form from './containers/StudentForm';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
