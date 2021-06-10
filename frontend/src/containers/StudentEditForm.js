@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
 
-class StudentForm extends Component {
+class StudentEditForm extends Component {
     state = {
+        id: null,
         first_name: '',
         last_name: '',
         age: 0
+    }
+
+    componentDidMount(){
+        this.setState({
+            id: this.props.student.id,
+            first_name: this.props.student.first_name,
+            last_name: this.props.student.last_name,
+            age: this.props.student.age
+        })
     }
 
     handleChange = (e) => {
@@ -27,7 +37,8 @@ class StudentForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
-        this.props.addAStudent(this.state)
+        this.props.editStudent(this.state)
+        this.props.formToggle()
     }
 
 
@@ -49,4 +60,4 @@ class StudentForm extends Component {
         )
     }
 }
-export default StudentForm
+export default StudentEditForm

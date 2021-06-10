@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom'
+import ClassroomLink from '../components/ClassroomLink'
 import image1 from '../images/image1.jpg'
 import ClassForm from './ClassForm'
 
@@ -11,17 +11,13 @@ const Classrooms = () => {
     useEffect(() => {
         fetch('http://localhost:9292/classrooms')
         .then(res => res.json())
-        .then(data =>
-            setClassrooms(data))
-            console.log(classrooms)
+        .then(data => {
+            console.log(data)
+            setClassrooms(data)
+        })
     }, [])
 
-    const classroomsList = classrooms.map(c => 
-    <Link to={`/classrooms/${c.id}`}>
-        <li key={c.id}>
-            {c.teacher_name}  -  {c.title}
-            </li>
-            </Link>)
+    const classroomsList = classrooms.map(c => <ClassroomLink key={c.id} classroom={c}/> )
 
     const changeFormState = (e) => {
         console.log(e.target)
@@ -42,7 +38,9 @@ const Classrooms = () => {
         setClassForm(false)
     }
 
+    
     return (
+        
         <div>
             <h1>Current Classrooms</h1>
             <img src={image1} alt="Kindergarden class"/>
