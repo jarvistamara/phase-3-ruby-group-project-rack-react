@@ -43,6 +43,7 @@ class StudentForm extends Component {
                     <br/>
                     <label>Age: </label> <br/>
                     <input type='number' name='age' value={this.state.age} onChange={this.handleAgeChange} />
+                    <br/>
                     <input type='submit' />
                 </form>
             </div>
