@@ -1,4 +1,4 @@
-# REACT BUCKET LIST APPLICATION
+# INTERNAL DAYCARE MANAGEMENT APPLICATION
     For my third project at [FLATIRON SCHOOL](https://flatironschool.com/), I migrated an internal daycare management single-page application using a database using the create_table method available to me via ACTIVE RECORDS. You can also find the Active Records query methods use for receiving and sending information between the front and back end of this project.
 
     You can find the backend via the backend folder listed above. The frontend is also listed above, but also can be found here [FRONT-END](https://github.com/jarvistamara/phase3-frontend-project).
